@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -22,8 +22,6 @@ public class User implements Serializable {
     private String nickName;
     @Column(nullable = false)
     private String regTime;
-
-    //省略getter settet方法、构造方法
 
     public User() {
     }
