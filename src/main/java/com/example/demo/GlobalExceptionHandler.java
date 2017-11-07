@@ -13,11 +13,11 @@ import java.util.Map;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
     public static final String DEFAULT_ERROR_VIEW = "error";
-
-    @ExceptionHandler(value = Exception.class)
-    public String defaultErrorHandler(HttpServletRequest req, Exception e) throws Exception {
-        return "topop";
-    }
+//
+//    @ExceptionHandler(value = Exception.class)
+//    public String defaultErrorHandler(HttpServletRequest req, Exception e) throws Exception {
+//        return "topop";
+//    }
 
     @ExceptionHandler(value = GlobalException.class)
     @ResponseBody

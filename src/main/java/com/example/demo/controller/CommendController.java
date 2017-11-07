@@ -51,15 +51,5 @@ public class CommendController {
         List<Commend> list = page1.getContent();
         return list;
     }
-    @ResponseBody
-    @RequestMapping(value = "/list" ,method = RequestMethod.GET)
-    public List<Commend>  getList(@RequestParam(value = "page", defaultValue = "0") Integer page,
-                                  @RequestParam(value = "size", defaultValue = "15") Integer size,Long userId){
-        Sort sort = new Sort(Sort.Direction.ASC, "id");
-        Pageable pageable = new PageRequest(page, size, sort);
 
-        Page<Commend> page1 = commendRepository.findAll(pageable);
-        List<Commend> list = page1.getContent();
-        return list;
-    }
 }
