@@ -72,8 +72,8 @@ public class WebConfiguration extends WebMvcConfigurerAdapter{
         converters.add(responseBodyConverter());
     }
 
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new UserRoleAuthorizationInterceptor()).addPathPatterns("/user/**");  //对来自/user/** 这个链接来的请求进行拦截
-    }
+//    @Override
+//    public void addInterceptors(InterceptorRegistry registry) {
+//        registry.addInterceptor(new UserRoleAuthorizationInterceptor()).addPathPatterns("/user/**");  //对来自/user/** 这个链接来的请求进行拦截
+//    }
 }

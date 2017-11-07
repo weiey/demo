@@ -1,9 +1,7 @@
 package com.example.demo.controller;
 
-import com.example.demo.model.Commend;
-import com.example.demo.model.User;
+import com.example.demo.po.Commend;
 import com.example.demo.repository.CommendRepository;
-import com.example.demo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
